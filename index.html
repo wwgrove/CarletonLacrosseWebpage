@@ -11,12 +11,29 @@
       overflow: hidden; /* Prevents scrollbars on the main page */
     }
 
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      height: 100dvh; /* Accounts for mobile browser bars */
+    }
+
     /* Makes the iframe fill the exact size of the window */
     .dynamic-iframe {
-      width: 100vw;   /* 100% of the Viewport Width */
-      height: 100vh;  /* 100% of the Viewport Height */
+      width: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
       border: none;
       display: block;
+    }
+
+    .site-footer {
+      flex: 0 0 auto;
+      background: #000;
+      color: #444;
+      font: 11px sans-serif;
+      text-align: center;
+      padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
     }
   </style>
 </head>
@@ -27,6 +44,8 @@
     class="dynamic-iframe"
     title="Carleton Men's Lacrosse Team">
   </iframe>
+
+  <footer class="site-footer">Powered by GroveWare</footer>
 
 </body>
 </html>
