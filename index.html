@@ -1,7 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
 <head>
-  <title>Carleton Men's Lacrosse Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carleton Men's Lacrosse Team | Carleton University, Ottawa</title>
+  <meta name="description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario. Find the team, schedule, roster and news.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.carletonlacrosse.ca/">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Carleton Men's Lacrosse">
+  <meta property="og:title" content="Carleton Men's Lacrosse Team">
+  <meta property="og:description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario.">
+  <meta property="og:url" content="https://www.carletonlacrosse.ca/">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Carleton Men's Lacrosse Team">
+  <meta name="twitter:description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario.">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Carleton Men's Lacrosse Team",
+    "sport": "Lacrosse",
+    "url": "https://www.carletonlacrosse.ca/",
+    "location": {
+      "@type": "Place",
+      "name": "Carleton University, Ottawa, Ontario, Canada"
+    }
+  }
+  </script>
+
   <style>
     /* Removes the default white border around the webpage */
     body, html {
@@ -35,15 +67,35 @@
       text-align: center;
       padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
     }
+
+    /* Text for crawlers/screen readers; the page content lives in the iframe */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
 <body>
 
-  <iframe 
-    src="https://paint-hide-11728048.figma.site/" 
+  <h1 class="sr-only">Carleton Men's Lacrosse Team</h1>
+  <p class="sr-only">Official website of the Carleton University men's lacrosse team in Ottawa, Ontario.</p>
+
+  <iframe
+    src="https://paint-hide-11728048.figma.site/"
     class="dynamic-iframe"
-    title="Carleton Men's Lacrosse Team">
+    title="Carleton Men's Lacrosse Team website"
+    loading="eager">
   </iframe>
+  <noscript>
+    <p><a href="https://paint-hide-11728048.figma.site/">Visit the Carleton Men's Lacrosse Team site</a></p>
+  </noscript>
 
   <footer class="site-footer">Powered by GroveWare</footer>
 
