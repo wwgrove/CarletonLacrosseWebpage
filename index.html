@@ -8,7 +8,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google-site-verification" content="5MzczTdG7IPT7YyPiat5JPBeUDPUmFEOCmzW2xIC39M" />
-  <title>CU Lax</title>
+  <title>CU Lacrosse</title>
+  <script>
+    const updateSiteTitle = () => {
+      document.title = window.matchMedia("(max-width: 767px)").matches ? "CU Lax" : "CU Lacrosse";
+    };
+    updateSiteTitle();
+    window.addEventListener("resize", updateSiteTitle);
+  </script>
   <meta name="description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario. Find the team, schedule, roster and news.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.carletonlacrosse.ca/">
