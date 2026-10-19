@@ -2,7 +2,11 @@
 <html lang="en-CA">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google-site-verification" content="5MzczTdG7IPT7YyPiat5JPBeUDPUmFEOCmzW2xIC39M" />
   <title>Carleton Men's Lacrosse Team | Carleton University, Ottawa</title>
   <meta name="description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario. Find the team, schedule, roster and news.">
@@ -41,6 +45,10 @@
   </script>
 
   <style>
+    html {
+      background: #000;
+    }
+
     body, html {
       margin: 0;
       padding: 0;
@@ -53,6 +61,9 @@
       flex-direction: column;
       height: 100vh;
       height: 100dvh;
+      background: #000;
+      padding-top: env(safe-area-inset-top);
+      box-sizing: border-box;
     }
 
     .dynamic-iframe {
