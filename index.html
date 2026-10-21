@@ -2,11 +2,11 @@
 <html lang="en-CA">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="google-site-verification" content="5MzczTdG7IPT7YyPiat5JPBeUDPUmFEOCmzW2xIC39M" />
   <title>CU Lax</title>
   <meta name="description" content="Official website of the Carleton Men's Lacrosse Team in Ottawa, Ontario. Find the team, schedule, roster and news.">
@@ -62,11 +62,8 @@
     }
 
     body {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       background: #000;
@@ -86,7 +83,7 @@
       color: #444;
       font: 11px/14px sans-serif;
       text-align: center;
-      padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+      padding: 4px 0;
     }
 
     .site-footer a {
